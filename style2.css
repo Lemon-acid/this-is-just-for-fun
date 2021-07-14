@@ -1,8 +1,14 @@
 html{
     text-align: center;
 }
-h1{
-    font-size: 40px;
+h1{color: white;
+    font-size: 200px;
+}
+p1{
+    color: white;
+}
+p{
+    color: black
 }
 h2{
     font-size: 30px;
