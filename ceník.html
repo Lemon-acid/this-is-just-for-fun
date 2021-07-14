@@ -3,7 +3,6 @@
         <link rel="stylesheet" href="style2.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <h1>Ceník</h1>
-        <p1><strong>Typy zájezdů:</strong></p1>
     </head>
     <style>
     body {
@@ -16,22 +15,29 @@
     </style>
     <body>
 
+        <div class="row d-flex">
+            <div class="col-sm-6 col-xs-12 d-flex justify-content-center align-content-center flex-column">
             <p><strong>Denní</strong></p>
-            <select class="form-select" aria-label="Default select example" style="max-width:30%">
+            <select class="form-select" aria-label="Default select example">
                 <option selected>Typy tříd</option>
                 <option value="1">První třída</option>
                 <option value="2">Obchodní třída</option>
                 <option value="3">Turistická třída</option>
               </select>
+            </div>
 
+            <div class="col col-sm-6 col-xs-12">
             <p><strong>Týdenní</strong></p>
-            <select class="form-select" aria-label="Default select example" style="max-width:30%">
+            <select class="form-select" aria-label="Default select example">
                 <option selected>Typy tříd</option>
                 <option value="1">První třída</option>
                 <option value="2">Obchodní třída</option>
                 <option value="3">Turistická třída</option>
               </select>
-
+            </div>
+        </div>
+        <a href="informace.html" class="btn btn-light back">Zpět</a>
+        
     </body>
 
 </html>
