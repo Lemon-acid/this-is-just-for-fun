@@ -3,6 +3,9 @@ h1 {
         color: aliceblue;
 } 
 
+h3 { font-size: 10px smaller;
+
+}
 header {
         text-align: center;
 }
