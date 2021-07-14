@@ -8,5 +8,9 @@ h2{
     font-size: 30px;
 }
 h3{
+    background-color: blueviolet;
     font-size: 50px;
+}
+nav{
+    background-color: blueviolet;
 }
