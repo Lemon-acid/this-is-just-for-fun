@@ -43,3 +43,8 @@ option {
     bottom: 0;
     right: 0;
 }
+header{
+    height: 300px;
+    width: 600px;
+    box-sizing: border-box;
+}
