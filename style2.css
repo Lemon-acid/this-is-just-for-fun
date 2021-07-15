@@ -20,11 +20,6 @@ h2{
 h3{
     font-size: 50px;
 }
-img{
-    height: 300px;
-    width: 400px;
-    border-radius: 50px;
-}
 h5{
     font-size: 20px;
 }
@@ -43,15 +38,6 @@ option {
     bottom: 0;
     right: 0;
 }
-header{
-    height: 300px;
-    width: 600px;
-    box-sizing: border-box;
-}
-form {
-        align-items: flex-end;
-        width: 200px;
-        height: 200px;
-        margin: auto;
-        position: relative;
+img{
+    border-radius: 50px;
 }
