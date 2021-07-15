@@ -33,3 +33,7 @@ h5{
     bottom: 0;
     left: 0;
 }
+option {
+        text-align:right; 
+        display: flex;  
+}
