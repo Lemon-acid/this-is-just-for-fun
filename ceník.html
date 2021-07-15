@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style2.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <h1>Ceník</h1>
     </head>
@@ -19,7 +20,7 @@
         <div class="row d-flex">
             <div class="col-sm-6 col-xs-12 d-flex justify-content-center align-content-center flex-column">
             <p2><strong>Denní</strong></p2>
-            <select class="form-select" aria-label="Default select example">
+            <select id="day" class="form-select" aria-label="Default select example">
                 <option selected>Typy tříd</option>
                 <option value="1">První třída &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; 900 000 kč</option>
                 <option value="2">Obchodní třída &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; 800 000 kč</option>
@@ -29,7 +30,7 @@
 
             <div class="col col-sm-6 col-xs-12">
             <p2><strong>Týdenní</strong></p2>
-            <select class="form-select" aria-label="Default select example">
+            <select id="week" class="form-select" aria-label="Default select example">
                 <option selected>Typy tříd</option>
                 <option value="1">První třída &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; 1 500 000 kč </option>
                 <option value="2">Obchodní třída &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; 1 400 000 kč</option>
@@ -38,7 +39,32 @@
             </div>
         </div>
         <a href="informace.html" class="btn btn-outline-light back">Zpět</a>
+        <a href="registrace.html" class="btn btn-dark next" style="display: none;">Další</a>
 
+
+<script>
+    $('#day').change(function() {
+        if ($('#day option:selected').text() !== "Typy tříd") {
+            $('.next').show();
+            $('#week').prop('disabled', 'disabled');
+        } else {
+            $('#week').prop('disabled', false);
+            $('.next').hide();
+        }
+    })
+
+    $('#week').change(function() {
+        if ($('#week option:selected').text() !== "Typy tříd") {
+            $('.next').show();
+            $('#day').prop('disabled', 'disabled');
+        } else {
+            $('#day').prop('disabled', false);
+            $('.next').hide();
+        }
+
+    })
+</script>
+        
     </body>
 
 </html>
