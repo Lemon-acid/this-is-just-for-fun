@@ -49,8 +49,8 @@ header{
     box-sizing: border-box;
 }
 form {
-        align-items: flex-end;
-        width: 200px;
+        align-content:flex-end;
+        width: 400px;
         height: 200px;
         margin: auto;
         position: relative;
