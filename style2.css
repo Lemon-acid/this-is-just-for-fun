@@ -37,3 +37,8 @@ option {
         text-align:right; 
         display: flex;  
 }
+.next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
