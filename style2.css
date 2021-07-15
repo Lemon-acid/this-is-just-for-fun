@@ -48,3 +48,10 @@ header{
     width: 600px;
     box-sizing: border-box;
 }
+form {
+        align-items: flex-end;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        position: relative;
+}
