@@ -1,7 +1,8 @@
 html{
     text-align: center;
 }
-h1{color: white;
+h1{
+    color: white;
     font-size: 200px;
 }
 p1{
@@ -33,6 +34,7 @@ h5{
     bottom: 0;
     left: 0;
 }
+<<<<<<< Updated upstream
 option {
         text-align:right; 
         display: flex;  
@@ -41,4 +43,10 @@ option {
     position: absolute;
     bottom: 0;
     right: 0;
+=======
+header{
+    height: 300px;
+    width: 600px;
+    box-sizing: border-box;
+>>>>>>> Stashed changes
 }
