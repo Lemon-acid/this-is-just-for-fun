@@ -41,3 +41,9 @@ option {
 img{
     border-radius: 50px;
 }
+form {
+    height: 200px;
+    margin: auto;
+    position: relative;
+    color: whitesmoke;
+}
